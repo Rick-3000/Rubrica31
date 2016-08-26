@@ -24,12 +24,14 @@ public class RickyPilayIngDeSoft2 {
                          + "3.- Multiplicar");
         Operador op = new Operador();
         Scanner ingreso = new Scanner(System.in);
-        op.setOpcion(ingreso.nextInt());
+        op.opcion=ingreso.nextInt();
         System.out.println("Ingrese el primer valor: ");
         op.setValor1(ingreso.nextInt());
         System.out.println("Ingrese el segundo valor: ");
         op.setValor2(ingreso.nextInt());
-        
+        if (op.opcion==1) {
+            op.Suma();
+        }
         
         
     }
