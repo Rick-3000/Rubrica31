@@ -13,7 +13,8 @@ public class Operador {
     
     private int valor1;
     private int valor2;
-    private int opcion;
+    int opcion;
+    
 
     /**
      * @return the valor1
@@ -46,16 +47,23 @@ public class Operador {
     /**
      * @return the opcion
      */
-    public int getOpcion() {
-        return opcion;
-    }
-
-    /**
-     * @param opcion the opcion to set
-     */
-    public void setOpcion(int opcion) {
-        this.opcion = opcion;
-    }
+   public int Suma(){
+       int total=0;
+       total = valor1 + valor2;
+       return total;
+   }
+   
+   public int Resta(){
+       int total=0;
+       total = valor1 - valor2;
+       return total;
+   }
+   
+   public int Multiplicacion(){
+       int total=0;
+       total = valor1 * valor2;
+       return total;
+   }
     
     
     
