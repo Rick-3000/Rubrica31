@@ -14,6 +14,7 @@ public class Operador {
     private int valor1;
     private int valor2;
     int opcion;
+    int total;
     
 
     /**
@@ -48,19 +49,16 @@ public class Operador {
      * @return the opcion
      */
    public int Suma(){
-       int total=0;
        total = valor1 + valor2;
        return total;
    }
    
    public int Resta(){
-       int total=0;
        total = valor1 - valor2;
        return total;
    }
    
    public int Multiplicacion(){
-       int total=0;
        total = valor1 * valor2;
        return total;
    }
