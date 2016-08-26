@@ -31,7 +31,19 @@ public class RickyPilayIngDeSoft2 {
         op.setValor2(ingreso.nextInt());
         if (op.opcion==1) {
             op.Suma();
+        }else{
+            if(op.opcion==2){
+                op.Resta();
+            }else{
+                if (op.opcion==3) {
+                    op.Multiplicacion();
+                }else{
+                    System.out.println("Operación no reconocida");
+                }
+            }
         }
+        
+        System.out.println("El resultado de "+op.getValor1()+" y "+op.getValor2()+" es: "+ op.total);
         
         
     }
